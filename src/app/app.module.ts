@@ -12,6 +12,11 @@ import { HeroesService } from "./services/heroes.service";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
+import { FingerNailsComponent } from './components/finger-nails/finger-nails.component';
+import { ToeNailsComponent } from './components/toe-nails/toe-nails.component';
+import { ToeNailsService } from "./services/toe-nails.service";
+import { LightboxModule } from "ngx-lightbox";
+import { ScrollingModule } from "@angular/cdk/scrolling";
 
 
 
@@ -21,7 +26,9 @@ import { CommonModule } from "@angular/common";
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    FingerNailsComponent,
+    ToeNailsComponent
   ],
   imports: [
     CommonModule,
@@ -29,10 +36,13 @@ import { CommonModule } from "@angular/common";
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LightboxModule,
+    ScrollingModule
   ],
   providers: [
-    HeroesService
+    HeroesService,
+    ToeNailsService
   ],
   bootstrap: [AppComponent]
 })

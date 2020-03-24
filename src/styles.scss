@@ -5,6 +5,7 @@
 
 body{
   padding-bottom: 50px;
+  background-image: url("assets/background/background.jpg") ;
 }
 
 .animated {
@@ -37,3 +38,24 @@ body{
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.card-title-text{
+  padding: 0;
+  text-align: center;
+  margin-top: 5px
+}
+
+.viewport {
+  height: 400px;
+  width: 100%;
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.viewport-desktop {
+  display: none;
+  @media (min-width: 600px) {
+    display: inline;
+  }
+}

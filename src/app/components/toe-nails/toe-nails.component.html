@@ -1,0 +1,27 @@
+<h1> Diseños <small>para pedicure</small></h1>
+<hr>
+
+<div class="card-columns">
+
+  <cdk-virtual-scroll-viewport  class="viewport" itemSize="200">
+
+    <div class="card animated fadeIn fast" style = "background: #c3c1f0;" *cdkVirtualFor="let nail of _albums; let i = index">
+      <img [src]=nail.src class="card-img-top"  (click)="open(i)">
+      <div class=" card-title-text">
+        <h5 class="card-title">{{i+1}}</h5>
+      </div>
+    </div>
+
+  </cdk-virtual-scroll-viewport>
+
+  <div class="viewport-desktop">
+    <div class="card animated fadeIn fast" *ngFor="let nail of _albums; let i = index">
+      <img [src]=nail.src class="card-img-top"  (click)="open(i)">
+      <div class=" card-title-text">
+        <h5 class="card-title">{{nail.id}}</h5>
+      </div>
+    </div>
+
+  </div>
+
+</div>

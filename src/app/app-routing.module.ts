@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from "./components/home/home.component";
 import { HeroesComponent } from "./components/heroes/heroes.component";
 import { AboutComponent } from "./components/about/about.component";
+import { FingerNailsComponent } from "./components/finger-nails/finger-nails.component";
+import { ToeNailsComponent } from "./components/toe-nails/toe-nails.component";
 
 const ROUTES: Routes = [
   { path: 'home', component : HomeComponent},
-  { path: 'heroes', component : HeroesComponent},
-  { path: 'about', component : AboutComponent},
-  { path: '**', pathMatch: 'full', redirectTo: ''}
+  { path: 'finger-nails', component : FingerNailsComponent},
+  { path: 'toe-nails', component : ToeNailsComponent},
+  { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
 @NgModule({

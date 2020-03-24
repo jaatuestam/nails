@@ -1,5 +1,12 @@
 # Nails
 
+PARA SUBIR A HEROKU
+CAMBIAR  EN EL PACKAGE.JSON
+
+ `"start": "ng serve",`
+POR
+  `    "start": "node server.js",`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Development server
